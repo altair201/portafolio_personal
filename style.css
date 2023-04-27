@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Bruno Ace SC', cursive;
+}
+.nav{
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 7px 40px -14px rgb(2, 255, 23);
+}
+.nav_alias{
+    color: white;
+    text-shadow: 2px 2px 5px rgb(2, 255, 23);
+}
+.nav_atajos{
+    color: white;
+    display: flex;
+    font-size: 0.7rem;
+    gap: 10px;
+}
+.container{
+    margin-top: 50px;
+    height: 200%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+.container_yo{
+    height: 50vh;
+    width: 90vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foto{
+    height:45%;
+    width: 50%;
+    border-radius: 50%;
+    background-image: url(./foto_perfil.jfif);
+    background-size: cover;
+    
+    animation: sombreado-animado 5s infinite alternate;
+}
+@keyframes sombreado-animado {
+    0% {
+        box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+    20% {
+        box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    }
+    40% {
+        box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+    }
+    60% {
+         box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    }
+    80% {
+        box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+    }
+    100% {
+        box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+}
+
+.nombre_cv{
+    height: 30%;
+    width: 70%;
+    display: grid;
+    place-items: center;
+}
+.nombre_cv>p{
+    color: white;
+    width: 63%;
+    text-shadow: 0 1px 7px rgb(2, 255, 23);
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(26, 206, 41);
+    animation: sombreado 1s infinite alternate;
+}
+@keyframes sombreado {
+    0%,30%{
+        box-shadow: 0 0 17px 1px #ff1818,0 0 4px 1px #ff1818;
+    }
+    50%,100% {
+        box-shadow: 0 0 17px 1px #0ff,0 0 4px 1px #0ff;
+    }
+    
+}
+.edit-hr{
+    border: solid 2px rgb(0, 255, 0);
+    width: 85%;
+}
+.descri{
+    width: 90%;
+}
+.descri_texto{
+   
+    border: solid 1px white;
+}
+.descri_texto> h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 7px rgb(2, 255, 23);
+}
+.descri_texto> p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
