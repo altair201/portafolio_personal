@@ -423,6 +423,7 @@ body{
 .edit_in{
     background-color: #111111;
     width: 70vw;
+    color: rgb(2, 255, 23);
     border-top: none;
     border-left: none;
     border-right: none;
